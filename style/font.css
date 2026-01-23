@@ -2,3 +2,8 @@
     font-family: "inter";
     src: url(../assets/fonts/Inter_18pt-Bold.ttf);
 }
+
+@font-face {
+    font-family: "inter-regular";
+    src: url(../assets/fonts/Inter_18pt-Regular.ttf);
+}
