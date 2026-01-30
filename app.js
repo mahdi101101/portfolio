@@ -75,7 +75,7 @@ function displayExperince() {
 <div class="experience__badge">
 ${exper.skills
   .map((skile) => {
-    return `<span>{skile}</span>`;
+    return `<span>${skile}</span>`;
   })
   .join("")}    
 </div>
