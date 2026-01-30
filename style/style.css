@@ -18,11 +18,11 @@
   --color-hover: rgba(145, 168, 214, 0.136);
 }
 
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 body,
 h1,
 h2,
@@ -42,7 +42,7 @@ h2 {
 }
 h3 {
   font-size: 1.8rem;
-  color: var(--color-text);
+  color: var(--color-heading);
   font-family: "inter-regular";
   margin-bottom: 2rem;
 }
@@ -59,6 +59,7 @@ a {
   max-width: 1184px;
   margin: auto;
   background: #0f172a;
+
 }
 .hover-circle {
   position: fixed;
@@ -72,6 +73,18 @@ a {
   transition: left 0.01s ease, top 0.01 ease;
 }
 
+
+
+.heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    display: none;
+  }
+}
+
 /* main */
 main {
   display: grid;
@@ -83,7 +96,10 @@ main {
 /* for tablet */
 @media screen and (min-width: 768px) {
   main {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
+  }
+  h1 {
+    font-size: 4rem;
   }
 }
 
@@ -102,11 +118,13 @@ main {
   justify-content: space-between;
   position: sticky;
   top: 0;
+  bottom: 0;
   overflow-y: hidden;
 }
 .profile__bio {
   line-height: 2;
 }
+
 
 /* LIST  */
 .line {
@@ -116,6 +134,7 @@ main {
   background-color: #fff;
   margin-right: 1rem;
 }
+
 .item {
   display: flex;
   justify-content: flex-start;
@@ -127,12 +146,29 @@ main {
 }
 .item a:hover {
   color: var(--color-heading);
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
-.item:hover .line {
-  width: 70px;
+@media screen and (max-width: 768px) {
+  .profile__list {
+    display: none;
+  }
+}
+
+.active {
+  font-size: 2.5rem;
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: flex-start;
+    position: static;
+    height: auto;
+  }
 }
 
 /* social */
@@ -155,9 +191,13 @@ main {
 .detail {
   padding: 3rem;
   overflow-y: scroll;
+  align-items: flex-start;
 }
 .detail p {
   line-height: 2;
+}
+.experience--box {
+  margin-top: 20rem;
 }
 
 /* experience */
@@ -165,21 +205,27 @@ main {
 .experience {
   display: grid;
   gap: 3rem;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 2fr 10fr;
   align-items: flex-start;
   border-radius: 0.5rem;
   padding: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .experience {
+    grid-template-columns: 1fr;
+  }
+}
 .margin-top {
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
-.experience--link:hover h3 {
+.hover:hover h3 {
   color: var(--color-link);
 }
-.experience--link:hover .experience {
+.hover:hover .experience,
+.hover:hover {
   background-color: var(--color-hover);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 /* badge */
@@ -196,3 +242,37 @@ span {
   gap: 1rem;
 }
 
+/* project */
+.project--box {
+  margin-top: 20rem;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  gap: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project__img--img {
+  width: 100%;
+}
+
+.box {
+  border: 0.01px solid var(--color-link-hover);
+}
+
+/* 
+/* mobile secion  */
+
+.icon{
+  width: 20px;
+}

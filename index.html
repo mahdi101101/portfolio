@@ -8,36 +8,40 @@
     <link rel="stylesheet" href="./style/font.css" />
   </head>
   <body class="container">
-    <div class="hover-circle"></div>
-
+    <div class="hover-circle"></div>    
     <main>
       <section class="profile">
-        <div class="profile__bio">
-          <h1>Mahdi Osati</h1>
-          <h2>Front End Engineer</h2>
-          <p>
-            I build accessible, pixel-perfect digital experiences for the web.
-          </p>
+        <div class="profile__bio ">
+          <div>
+            <h1>Mahdi Osati</h1>
+            <h2>Front End Engineer</h2>
+            <p>
+              I build accessible, pixel-perfect digital experiences for the web.
+            </p>
+
+          </div>
         </div>
-        <div class="prodile__list">
+        <div class="profile__list">
           <ul>
             <li class="item">
               <div class="line"></div>
-              <a href="#about-link">ABOUT</a>
+              <a data-id="about--link" href="#">ABOUT</a>
             </li>
             <li class="item">
               <div class="line"></div>
-              <a href="#experience-link">EXPERIENCES</a>
+              <a data-id="experience-link" href="#experience-link"
+                >EXPERIENCES</a
+              >
             </li>
             <li class="item">
               <div class="line"></div>
-              <a href="#projects">PROJECTS</a>
+              <a data-id="project--link" href="#project--link">PROJECTS</a>
             </li>
           </ul>
         </div>
         <div class="social">
           <!-- g -->
-          <svg
+       <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1024 1024"
             fill="currentColor"
@@ -102,9 +106,11 @@
           </a>
         </div>
       </section>
-      <section class="detail">
-        <div class="about">
-          <p class="about__paragraph" id="about-link">
+
+      <section class="detail"  >
+        <div class="about spy-section mobile-section  " id="about--link">
+          <h3 class="heading">ABOUT</h3>
+          <p class="about__paragraph">
             I’m a frontend engineer with a specialty in web accessibility,
             focused on building pixel-perfect, intuitive user interfaces. I
             enjoy working at the intersection of design and engineering, where
@@ -129,31 +135,67 @@
           </p>
         </div>
         <!-- experience -->
-        <div class="experience-box">
-          <!-- <a href="" class="experience--link">
-            <div class="experience margin-top">
-              <p class="experience__year">2024</p>
-              <div class="experience__title">
-                <h3>jonior front end developer</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quaerat quia numquam blanditiis autem libero, dolorem deserunt
-                  quasi nostrum molestias dignissimos aperiam odit, saepe fuga
-                  eaque explicabo quod veniam sunt rerum.
-                </p>
-                <div class="experience__badge">
-                  <span>html</span>
-                  <span>Css</span>
-                  <span>javaScript</span>
-                  <span>Angular</span>
-
-                </div>
-              </div>
-            </div>
-          </a> -->
+        <section class="experience--box mobile-section"  >
+          <h3 class="heading">Experience</h3>
+          <div class="experience-box spy-section" id="experience-link" >
+            <!-- <a href="" class="experience--link">
+               <div class="experience margin-top">
+                 <p class="experience__year">2024</p>
+                 <div class="experience__title">
+                   <h3>jonior front end developer</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quaerat quia numquam blanditiis autem libero, dolorem deserunt
+                     quasi nostrum molestias dignissimos aperiam odit, saepe fuga
+                     eaque explicabo quod veniam sunt rerum.
+                   </p>
+                   <div class="experience__badge">
+                     <span>html</span>
+                     <span>Css</span>
+                     <span>javaScript</span>
+                     <span>Angular</span>
+   
+                   </div>
+                 </div>
+               </div>
+             </a> -->
+          </div>
+        </section>
+        <section class="project--box mobile-section">
+          <h3 class="heading">PROJECTS</h3>
+          <div class="projects spy-section" id="project--link">
+            <!-- <a href="">
+      <div class="project margin-top  hover">
+        <div class="product__img">
+          <img
+            class="project__img--img"
+            src="./assets/images/project-image/image.png.jpeg"
+            alt=""
+          />
         </div>
+        <div class="project__detail">
+          <h3>bulld a spotity connected Appa</h3>
+          <p>
+            Viden course that teaches how to build a web and with the Snotif
+            Web API. Topics covered include the principles of REST APIs,
+            user auth flows, Node, Express, React, Styled Components
+          </p>
+          <div class="experience__badge">
+              <span>html</span>
+              <span>Css</span>
+              <span>javaScript</span>
+              <span>Angular</span>
+  
+            </div>
+        </div>
+      </div>
+  
+    </a> -->
+          </div>
+        </section>
       </section>
     </main>
     <script src="./app.js"></script>
   </body>
 </html>
+
