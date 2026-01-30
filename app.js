@@ -37,7 +37,7 @@ const experience = [
 
 const projects = [
   {
-    img: "./assets/images/project-image/image.png.jpeg",
+    img: "./assets/images/project-image/image.jpeg",
     title: "bulld a spotity connected Appa",
     explanation:
       "Viden course that teaches how to build a web and with the Snotif  Web API. Topics covered include the princi",
@@ -45,7 +45,7 @@ const projects = [
     link: "aparat.com",
   },
   {
-    img: "./assets/images/project-image/image.png.jpeg",
+    img: "./assets/images/project-image/image.jpeg",
     title: "bulld a spotity connected Appa",
     explanation:
       "Viden course that teaches how to build a web and with the Snotif  Web API. Topics covered include the princi",
@@ -53,7 +53,7 @@ const projects = [
     link: "aparat.com",
   },
   {
-    img: "./assets/images/project-image/image.png.jpeg",
+    img: "./assets/images/project-image/image.jpeg",
     title: "bulld a spotity connected Appa",
     explanation:
       "Viden course that teaches how to build a web and with the Snotif  Web API. Topics covered include the princi",
@@ -98,7 +98,7 @@ function displayproject() {
               <div class="product__img">
                 <img
                   class="project__img--img"
-                  src=".${project.img}"
+                  src="${project.img}"
                   alt=""
                 />
               </div>
